@@ -1,0 +1,21 @@
+##############################################################
+abeno.name=Abeno
+abeno.vid.0=0x1A86
+abeno.pid.0=0x55D3
+
+##############################################################
+abeno328.name=Bootloader for Abeno 328
+
+abeno328.bootloader.tool=arduino:avrdude
+abeno328.bootloader.low_fuses=0xff
+abeno328.bootloader.high_fuses=0xde
+abeno328.bootloader.extended_fuses=0xfd
+abeno328.bootloader.file=optiboot_atmega328.hex
+abeno328.bootloader.unlock_bits=0x3F
+abeno328.bootloader.lock_bits=0x0F
+
+abeno328.build.mcu=atmega328
+abeno328.build.f_cpu=16000000L
+abeno328.build.board=AVR_UNO
+abeno328.build.core=arduino
+abeno328.build.variant=standard
